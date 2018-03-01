@@ -28,7 +28,7 @@ dateShortcode.parse(str)
 
 #### codes([ date ])
 
-Returns an array containing all of the codes, their current values, descriptions, and examples.
+Returns an array containing all possible codes, their current values, descriptions, and examples.
 
 ##### Parameters
 
@@ -154,7 +154,7 @@ dateShortcode.test(str1, str3)
 
 ### Shortcodes
 
-| Description                    | Token | Output                                   |
+| Description                    | Code  | Output                                   |
 |--------------------------------|-------|------------------------------------------|
 | Month                          | MMMM  | January February ... November December   |
 | Month (3 characters)           | MMM   | Jan Feb ... Nov Dec                      |

@@ -46,7 +46,7 @@ var dateShortcodeConfig = {
 
 const dateShortcode = require('date-shortcode').config(dateShortcodeConfig)
 
-var str = 'It\'s the {wo} week of \'{YY}!'
+var str = 'It\'s the [wo] week of \'[YY]!'
 dateShortcode.parse(str)
 //=> "It's the 9th week of '18!"
 ```

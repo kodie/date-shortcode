@@ -50,7 +50,7 @@ const dateShortcode = require('date-shortcode').config(dateShortcodeConfig)
 
 #### parse(str, [ date ])
 
-Parse a string with date shortcodes in it.
+Parse a string with [date shortcodes](#shortcodes) in it.
 
 ##### Parameters
 
@@ -81,7 +81,7 @@ Strip date shortcodes from a string.
 
 ###### str (String)
 
-The string to strip date shortcodes from.
+The string to strip [date shortcodes](#shortcodes) from.
 
 ##### Example
 
@@ -94,7 +94,7 @@ dateShortcode.strip(str)
 
 #### test(str1, str2)
 
-Test if two strings would be the same without date shortcodes.
+Test if two strings would be the same without [date shortcodes](#shortcodes).
 
 ##### Parameters
 

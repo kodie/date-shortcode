@@ -1,0 +1,48 @@
+{
+  "name": "date-shortcode",
+  "version": "1.0.0",
+  "description": "A small and simple date shortcode library.",
+  "keywords": [
+    "code",
+    "date",
+    "day",
+    "hour",
+    "minute",
+    "month",
+    "parse",
+    "second",
+    "short",
+    "time",
+    "week",
+    "year"
+  ],
+  "author": {
+    "name": "Kodie Grantham",
+    "email": "kodie.grantham@gmail.com",
+    "url": "http://kodieg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodie/date-shortcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kodie/date-shortcode/issues"
+  },
+  "homepage": "https://github.com/kodie/date-shortcode",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && ava"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "diff": "^3.4.0",
+    "replace-once": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "standard": "^11.0.0"
+  }
+}

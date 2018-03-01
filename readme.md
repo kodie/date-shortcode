@@ -28,7 +28,7 @@ dateShortcode.parse(str)
 
 #### codes([ date ])
 
-Returns an object containing all of the codes, their current values, descriptions, and examples.
+Returns an array containing all of the codes, their current values, descriptions, and examples.
 
 ##### Parameters
 

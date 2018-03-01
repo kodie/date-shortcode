@@ -26,6 +26,35 @@ dateShortcode.parse(str)
 
 ### API
 
+#### codes([ date ])
+
+Returns an object containing all of the codes, their current values, descriptions, and examples.
+
+##### Parameters
+
+###### date (String/Date)
+
+*Optional*
+
+A date object or a string to pass to a date object. Defaults to now.
+
+##### Example
+
+```javascript
+dateShortcode.codes('2007-06-12')
+//=> [ { code: 'MMMM',
+//=>     value: 'June',
+//=>     description: 'Month',
+//=>     example: 'January February ... November December' },
+//=>   { code: 'MMM',
+//=>     value: 'Jun',
+//=>     description: 'Month (3 characters)',
+//=>     example: 'Jan Feb ... Nov Dec' },
+//=>   { code: 'MM',
+//=>     value: '06',
+//=>   ...
+```
+
 #### config(conf)
 
 Change `date-shortcode` configuration parameters.

@@ -28,15 +28,15 @@ dateShortcode.parse(str)
 
 #### codes([ date ])
 
-Returns an array containing all possible codes, their current values, descriptions, and examples.
+Returns an `Array` containing all possible codes, their current values, descriptions, and examples.
 
 ##### Parameters
 
-###### date (String/Date)
+###### date (`String`/`Date`)
 
 *Optional*
 
-A date object or a string to pass to a date object. Defaults to now.
+A Date object or a String to pass to a Date object. Defaults to now.
 
 ##### Example
 
@@ -57,13 +57,13 @@ dateShortcode.codes('2007-06-12')
 
 #### config(conf)
 
-Change `date-shortcode` configuration parameters.
+Change configuration parameters. Returns an instance of `date-shortcode`.
 
 ##### Parameters
 
-###### conf (Object)
+###### conf (`Object`)
 
-An object containing the configuration parameters to change.
+The configuration parameters to change.
 
 ##### Example
 
@@ -83,19 +83,19 @@ dateShortcode.parse(str)
 
 #### parse(str, [ date ])
 
-Parse a string with [date shortcodes](#shortcodes) in it.
+Parse a String with [date shortcodes](#shortcodes) in it. Returns a String.
 
 ##### Parameters
 
-###### str (String)
+###### str (`String`)
 
-The string to do the parsing on.
+The String to do the parsing on.
 
-###### date (String/Date)
+###### date (`String`/`Date`)
 
 *Optional*
 
-A date object or a string to pass to a date object. Defaults to now.
+A Date object or a String to pass to a Date object. Defaults to now.
 
 ##### Example
 
@@ -108,13 +108,13 @@ dateShortcode.parse(str, '2006-10-09')
 
 #### strip(str)
 
-Strip date shortcodes from a string.
+Strip [date shortcodes](#shortcodes) from a string.
 
 ##### Parameters
 
-###### str (String)
+###### str (`String`)
 
-The string to strip [date shortcodes](#shortcodes) from.
+The string to strip date shortcodes from.
 
 ##### Example
 
@@ -127,17 +127,17 @@ dateShortcode.strip(str)
 
 #### test(str1, str2)
 
-Test if two strings would be the same without [date shortcodes](#shortcodes).
+Test if two Strings would be the same without [date shortcodes](#shortcodes).
 
 ##### Parameters
 
-###### str1 (String)
+###### str1 (`String`)
 
-First string to test
+First string to test.
 
-###### str2 (String)
+###### str2 (`String`)
 
-Second string to test
+Second string to test.
 
 ##### Example
 
@@ -152,9 +152,29 @@ dateShortcode.test(str1, str3)
 //=> false
 ```
 
+##### Note
+
+This function will return `true` if the two supplied strings are very similar.
+
+For example:
+
+```javascript
+var str1 = 'Hey, it\'s {h}!'
+var str2 = 'Hey, it\'s Bob!'
+dateShortcode.test(str1, str2)
+//=> true
+
+var str1 = 'Hey, it\'s {h} o\'clock!'
+var str2 = 'Hey, it\'s Bob Saget!'
+dateShortcode.test(str1, str2)
+//=> false
+```
+
 ### Shortcodes
 
-| Description                    | Code  | Output                                   |
+These are the codes that you can use with the above functions. They are case-sensitive. You may use a combination of multiple codes as well as non-shortcode characters in a set of brackets (i.e `{H:mmA} {M/D/YY}`).
+
+| Description                    | Code  | Example                                  |
 |--------------------------------|-------|------------------------------------------|
 | Month                          | MMMM  | January February ... November December   |
 | Month (3 characters)           | MMM   | Jan Feb ... Nov Dec                      |
